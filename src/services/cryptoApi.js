@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const baseUrl = 'https://api.nomics.com/v1/currencies/ticker?key=fd35ebf5aeb90bde571a94a831fa46218b794bad&per-page=100&page=2';
+const baseUrl = `https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_SECRET_KEY}&per-page=100&page=2`;
 const createRequest = (url) => ({ url})
 
 export const cryptoApi = createApi ({

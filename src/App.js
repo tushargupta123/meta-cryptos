@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import {Layout, Typography, Space } from 'antd';
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails,Cryptocurrencies15 } from './components';
 import './App.css';
-
+import cors from 'cors'
 function App() {
 
   return (
